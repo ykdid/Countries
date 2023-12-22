@@ -15,21 +15,40 @@
     <title>Countries</title>
   </head>
   <body>
+   
+    
     <div class="container my-5">
+      <div id="errors"></div>
       <div class="card mb-3">
-        <div class="card-body">
-          <div class="input-group">
-            <input id="txtSearch" type="text" class="form-control" />
-            <button id="btnSearch" type="button" class="btn btn-primary">
-              Search
-            </button>
+          <div class="card-body">
+              <div class="input-group">
+                  <input id="txtSearch" type="text" class="form-control">
+                  <button id="btnSearch" type="button" class="btn btn-primary">Search</button>
+              </div>
           </div>
-        </div>
       </div>
-      <div class="card mb-3" id="country-details"></div>
-      <div id="general"></div>
-    </div>
+      <div id="details">        
+          <div class="card mb-3" >
+              <div class="card-header"> Search Result</div>
+              <div class="card-body">
+                  <div class="row" id="country-details">
 
+                  </div>
+              </div>
+          </div>
+          <div class="card mb-3">
+              <div class="card-header">Neighbour Countries </div>
+              <div class="card-body">
+                  <div class="row" id="neighbours">
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    
     <script src="script.js"></script>
+
   </body>
-</html>
+</html> 
